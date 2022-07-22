@@ -1,0 +1,11 @@
+node_modules
+build
+~*
+*~
+.DS_Store
+.history
+yarn-error.log
+*.log
+*.tar.gz
+.parcel-cache
+dist

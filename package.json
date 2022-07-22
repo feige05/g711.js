@@ -1,0 +1,29 @@
+{
+  "name": "g711",
+  "version": "1.0.1",
+  "description": "A JavaScript Audio Codec for G711A/G711U/PCM. Pure javascript implements, no any other 3rd-party library required.",
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "types": "dist/types.d.ts",
+  "files": [
+    "dist",
+    "types",
+    "README.md"
+  ],
+  "scripts": {
+    "clean-dist": "rm -rf dist && mkdir dist",
+    "dev": "npm run clean-dist && parcel ./public/index.html",
+    "build": "npm run clean-dist && parcel build src/index.ts --no-source-maps --no-scope-hoist",
+    "test": "jest"
+  },
+  "author": "HF",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/config-default": "^2.6.2",
+    "@parcel/packager-ts": "^2.6.2",
+    "@parcel/transformer-raw": "^2.6.2",
+    "@parcel/transformer-typescript-types": "^2.6.2",
+    "typescript": "^4.7.4"
+  }
+}
