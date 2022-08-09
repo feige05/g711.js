@@ -24,12 +24,6 @@ export function ulawToPCM(data: Uint8Array, bit?: number): Int8Array;
 ``` ts
 export function ulawFromPCM(data: Int16Array | Int8Array): Uint8Array;
 
-
-
-export type NumChannels = 1 | 2;
-export type SampleBits = 8 | 16;
-export type SampleRate = 8000 | 11025 | 16000 | 22050 | 24000 | 44100 | 48000;
-
 ```
 ## PCM to WAV
 ``` ts

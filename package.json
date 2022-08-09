@@ -17,6 +17,17 @@
     "build": "npm run clean-dist && parcel build src/index.ts --no-source-maps --no-scope-hoist",
     "test": "jest"
   },
+  "repository": {
+    "url": "https://github.com/feige05/g711.js",
+    "type": "git"
+  },
+  "keywords": [
+    "G711",
+    "G711A",
+    "G711U",
+    "alaw",
+    "ulaw"
+  ],
   "author": "HF",
   "license": "MIT",
   "devDependencies": {
